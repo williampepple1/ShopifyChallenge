@@ -1,5 +1,7 @@
-# Getting Started with Create React App
 
+# Getting Started with Create React App
+This React App was created for the Shopify Front-End Challenge for 2021. Check out the final app [HERE](https://shopify-challenge-git-master.williampepple1.vercel.app//)
+ 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
