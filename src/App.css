@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Karla:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap');
+
+.App {
+  padding: 0;
+  margin: 0;
+  background-color: #F4F6F8;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+}
+
+.indicator-nominated {
+  cursor: pointer;
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  border-radius: 20px;
+  border: none;
+  padding: 5px 10px;
+  color: #ffffff;
+  background-color: #06160e;
+  box-shadow: rgba(136, 136, 136, 0.05) 5px 5px 10px;
+}
+
+.indicator-nominated:focus {
+  outline: none;
+  box-shadow: rgba(136, 136, 136, 0.15) 8px 8px 10px;
+}
+
+/* Text */
+h1 {
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  font-size: 55px;
+  padding: 0;
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+
+h4 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+
+#tagline {
+  font-style: 'Poppins', sans-serif;
+  color: white;
+}
+
+/* Search */
+.search {
+  background: #bd0f4d;
+  text-align: center;
+  padding: 3em 15px 3em 15px;
+
+}
+
+.search-results {
+  width: 90vw;
+  background-color: #F4F6F8;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+
+  align-items: flex-start;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.search-results h2 {
+  width: 100%;
+}
+
+#search-bar {
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 20px;
+  border-radius: 500px;
+  border: none;
+  width: 50%;
+  margin: 0 0 20px 0;
+  transition: border 400ms ease-in-out;
+}
+
+#search-bar:focus {
+  border: #667973 solid 3px;
+  outline: none;
+}
+
+
+#test {
+  display: flex;
+  justify-content: center;
+}
+
+/* Movie Card */
+.movies {
+  background-color: white;
+  width: 200px;
+  border-radius: 10px;
+  margin: 1%;
+  text-align: center;
+  block-size: fit-content;
+  box-shadow: rgba(136, 136, 136, 0.05) 5px 5px 10px;
+  transition: box-shadow 500ms ease-in-out;
+}
+
+.movies:hover {
+  box-shadow: rgba(136, 136, 136, 0.15) 8px 8px 10px;
+}
+
+.movies-title {
+  color: rgb(32, 32, 32);
+}
+
+.movies-poster {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.movies-poster-crop {
+  height: 15em;
+  overflow: hidden;
+}
+
+.movies-desc {
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+.movies-gif {
+  width: 300px;
+}
+
+/* Buttons */
+
+button {
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-toggle {
+  background-color: transparent;
+  border: none;
+  border: black solid 3px;
+  color: #000000;
+  padding: 10px;
+  transition: background-color 400ms ease-in-out;
+}
+
+.btn-toggle:hover {
+  background-color: black;
+  ;
+  color: #ffffff;
+}
+
+.btn-toggle:disabled {
+  outline: none;
+  background-color: black;
+  color: white;
+}
+
+#btn-search-results {
+  border-radius: 20px 0 0 20px;
+}
+
+#btn-view-nominations {
+  border-radius: 0 20px 20px 0;
+}
+
+.btn-nominate {
+  padding: 5px 10px;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 400ms ease-in-out;
+}
+
+.btn-nominate:hover,
+.btn-nominate:focus {
+  background-color: #0cc267;
+  outline: none;
+}
+
+.btn-nominate-disabled {
+  padding: 5px 10px;
+  color: black;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-remove {
+  padding: 5px 10px;
+  color: #ffffff;
+  background-color: rgb(221, 86, 86);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 400ms ease-in-out;
+
+}
+
+.btn-remove:hover,
+.btn-remove:focus {
+  background-color: rgb(199, 54, 54);
+  outline: none;
+}
+
+.section-title {
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* Navbar */
+
+nav {
+  margin: 20px 0 20px 0;
+  text-align: center;
+}
+
+.nav-link {
+  padding: 10px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: x-small;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  border-bottom: black solid 3px;
+  border-radius: none;
+}
+
+/* Nomination Limit Banner */
+
+#nomination-limit-banner {
+  color: white;
+  background-color: rgb(248, 179, 101);
+  text-align: center;
+  padding: 10px 15px 10px 15px;
+  border-radius: 10px;
+  margin: 0;
+  display: none;
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  text-align: left;
+  max-width: 50vw;
+}
+
+#nomination-limit-banner p {
+  margin: 0;
+  letter-spacing: 1px;
+  font-weight: 400;
+  padding-right: 5px;
+}
+
+#nominated-five {
+  color: white;
+  background-color: rgb(248, 179, 101);
+  text-align: center;
+  padding: 10px 15px 10px 15px;
+  border-radius: 10px;
+  margin: 0;
+  display: none;
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  text-align: left;
+  max-width: 50vw;
+}
+
+#nominated-five p {
+  margin: 0;
+  letter-spacing: 1px;
+  font-weight: 400;
+  padding-right: 5px;
+}
